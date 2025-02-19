@@ -5,6 +5,7 @@ import About from './components/about.jsx';
 import Skills from './components/skills.jsx';
 import Projects from './components/projects.jsx';
 import Contact from './components/contact.jsx';
+import NavBlocks from './components/NavBlocks.jsx';
 import Footer from './components/footer.jsx';
 import './App.css';
 import './styles/animations.css';
@@ -33,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <NavBlocks />
       <main>
         <Hero />
         <About />

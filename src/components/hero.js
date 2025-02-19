@@ -6,9 +6,9 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1>Hi, I'm <span className="highlight">Your Name</span></h1>
+          <h1>Hi, I'm <span className="highlight">Pawan Mayekar</span></h1>
           <h2>Full Stack Developer</h2>
-          <p>Building digital experiences that make a difference</p>
+
           <div className="hero-buttons">
             <a href="#projects" className="btn primary">View My Work</a>
             <a href="#contact" className="btn secondary">Contact Me</a>

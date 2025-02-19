@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
   const skills = {
-    'Frontend': ['HTML5', 'CSS3', 'JavaScript', 'React'],
-    'Backend': ['Node.js', 'Express', 'Python'],
-    'Database': ['MongoDB', 'MySQL'],
-    'Tools': ['Git', 'Docker', 'VS Code']
+    'Technical Skills': ['Machine Learning', 'Data Science', 'TensorFlow', 'PyTorch', 'Computer Vision'],
+    'Web Development': ['Python', 'React.js', 'JavaScript', 'CSS', 'HTML', 'Django', 'Node.js', 'Flask'],
+    'Version Control': ['Git', 'Github'],
+    'Soft Skills': ['Leadership', 'Communication', 'Adaptability', 'Problem-Solving']
   };
 
   const containerVariants = {
