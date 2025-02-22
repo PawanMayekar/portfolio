@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import resume from '../assets/docs/Pawan_mayekar_resume.pdf';
-import './navbar.css';
+import '../styles/navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

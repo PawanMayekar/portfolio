@@ -7,25 +7,25 @@ const Projects = () => {
       title: "Enhancing Patient Care with Bilingual Speech and ML",
       description: "A healthcare solution that leverages machine learning and speech recognition to improve patient care through bilingual communication support.",
       technologies: ["Python", "Machine Learning", "Speech Recognition", "Natural Language Processing"],
-      github: "https://github.com/Pawanmatkar297/healthcare-ml"
+      github: "https://github.com/Pawanmatkar297/Health-Care-Chat-Bot"
     },
     {
       title: "Hand Sign Detection Using Python",
       description: "Developed a computer vision project for real-time hand sign detection and interpretation using Python and deep learning techniques.",
-      technologies: ["Python", "OpenCV", "TensorFlow", "Computer Vision"],
-      github: "https://github.com/Pawanmatkar297/hand-sign-detection"
+      technologies: ["Python", "OpenCV", "TensorFlow", "Computer Vision", "Torch"],
+      github: "https://github.com/Pawanmatkar297/Hand-Sign-Detection-Using-Python"
     },
     {
       title: "Oil Gas Forecast Monitor",
       description: "A monitoring system for oil and gas forecasting using advanced analytics and machine learning algorithms.",
       technologies: ["Python", "Data Science", "Machine Learning", "Time Series Analysis"],
-      github: "https://github.com/Pawanmatkar297/oil-gas-forecast"
+      github: "https://github.com/Pawanmatkar297/Oil-Gas-Forecast-Monitor-FE"
     },
     {
       title: "Movie Recommendation System",
       description: "A Python-based movie recommendation system using collaborative filtering and content-based filtering techniques.",
       technologies: ["Python", "Machine Learning", "Data Analysis", "Recommendation Algorithms"],
-      github: "https://github.com/Pawanmatkar297/movie-recommender"
+      github: "https://github.com/Pawanmatkar297/Movie-Recommendation-System"
     }
   ];
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './hero.css';
+import '../styles/hero.css';
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <h1>Hi, I'm <span className="highlight">Pawan Mayekar</span></h1>
-          <h2>Full Stack Developer</h2>
+          <h2>Software Developer</h2>
 
           <div className="hero-buttons">
             <a href="#projects" className="btn primary">View My Work</a>
