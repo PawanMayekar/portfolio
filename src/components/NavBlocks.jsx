@@ -31,7 +31,7 @@ const NavBlocks = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeSection, setActiveSection]);
+  }, [activeSection, setActiveSection, sections]);
 
   const handleBlockClick = (id) => {
     const element = document.getElementById(id);
