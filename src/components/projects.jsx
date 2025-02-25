@@ -77,8 +77,9 @@ const Projects = () => {
               variants={projectVariants}
               whileHover={{
                 y: -5,
-                boxShadow: "0 8px 30px rgba(99, 102, 241, 0.2)",
-                borderColor: "rgba(99, 102, 241, 0.3)"
+                boxShadow: "0 8px 30px rgba(99, 102, 241, 0.3)",
+                borderColor: "rgba(99, 102, 241, 0.5)",
+                backgroundColor: "rgba(30, 41, 59, 0.95)"
               }}
             >
               <div className="project-info">
@@ -99,8 +100,9 @@ const Projects = () => {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.1 * techIndex }}
                       whileHover={{
-                        backgroundColor: "rgba(99, 102, 241, 0.2)",
-                        color: "#e2e2e2"
+                        backgroundColor: "rgba(99, 102, 241, 0.4)",
+                        color: "white",
+                        y: -2
                       }}
                     >
                       {tech}
@@ -114,7 +116,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     whileHover={{
                       y: -2,
-                      boxShadow: "0 4px 12px rgba(99, 102, 241, 0.3)"
+                      boxShadow: "0 4px 12px rgba(99, 102, 241, 0.5)"
                     }}
                     whileTap={{ scale: 0.95 }}
                   >
