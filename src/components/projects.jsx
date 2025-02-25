@@ -34,18 +34,18 @@ const Projects = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3
+        staggerChildren: 0.2
       }
     }
   };
 
   const projectVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { y: 30, opacity: 0 },
     visible: {
-      opacity: 1,
       y: 0,
+      opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.5,
         ease: "easeOut"
       }
     }
@@ -53,8 +53,9 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <div className="projects-content">
+      <div className="container">
         <motion.h2
+          className="section-heading"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -67,7 +68,7 @@ const Projects = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {projects.map((project, index) => (
             <motion.div
@@ -75,42 +76,51 @@ const Projects = () => {
               className="project-card"
               variants={projectVariants}
               whileHover={{
-                scale: 1.03,
-                boxShadow: "0 8px 16px rgba(0,0,0,0.1)"
+                y: -5,
+                boxShadow: "0 8px 30px rgba(99, 102, 241, 0.2)",
+                borderColor: "rgba(99, 102, 241, 0.3)"
               }}
-              whileTap={{ scale: 0.98 }}
             >
               <div className="project-info">
-                <h3>{project.title}</h3>
+                <motion.h3
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {project.title}
+                </motion.h3>
                 <p>{project.description}</p>
                 <div className="project-tech">
-                  {project.technologies.map((tech, i) => (
+                  {project.technologies.map((tech, techIndex) => (
                     <motion.span
-                      key={i}
+                      key={techIndex}
                       className="tech-tag"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.1 * techIndex }}
+                      whileHover={{
+                        backgroundColor: "rgba(99, 102, 241, 0.2)",
+                        color: "#e2e2e2"
+                      }}
                     >
                       {tech}
                     </motion.span>
                   ))}
                 </div>
-                <motion.div 
-                  className="project-links"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                >
+                <div className="project-links">
                   <motion.a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{
+                      y: -2,
+                      boxShadow: "0 4px 12px rgba(99, 102, 241, 0.3)"
+                    }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    GitHub
+                    <i className="fab fa-github"></i> View Project
                   </motion.a>
-                </motion.div>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -5,6 +5,8 @@ const Skills = () => {
   const skills = {
     'Technical Skills': ['Machine Learning', 'Data Science', 'TensorFlow', 'PyTorch', 'Computer Vision'],
     'Web Development': ['Python', 'React.js', 'JavaScript', 'CSS', 'HTML', 'Django', 'Node.js', 'Flask'],
+    'Database': ['MongoDB', 'MySQL', 'PostgreSQL', 'Firebase'],
+    'DevOps': ['Docker', 'AWS', 'CI/CD', 'Kubernetes'],
     'Version Control': ['Git', 'Github'],
     'Soft Skills': ['Leadership', 'Communication', 'Adaptability', 'Problem-Solving']
   };
@@ -41,7 +43,9 @@ const Skills = () => {
       }
     },
     hover: {
-      scale: 1.1,
+      scale: 1.05,
+      backgroundColor: "rgba(99, 102, 241, 0.2)",
+      color: "#e2e2e2",
       transition: {
         duration: 0.2
       }
@@ -50,8 +54,9 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills">
-      <div className="skills-content">
+      <div className="container">
         <motion.h2
+          className="section-heading"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -72,8 +77,9 @@ const Skills = () => {
               className="skill-category"
               variants={categoryVariants}
               whileHover={{
-                boxShadow: "0 8px 16px rgba(0,0,0,0.1)",
-                translateY: -5
+                boxShadow: "0 8px 30px rgba(99, 102, 241, 0.2)",
+                translateY: -5,
+                borderColor: "rgba(99, 102, 241, 0.3)"
               }}
             >
               <motion.h3

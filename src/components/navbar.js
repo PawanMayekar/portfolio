@@ -21,6 +21,19 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    // Disable body scroll when menu is open on mobile
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [menuOpen]);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -87,6 +100,10 @@ const Navbar = () => {
           <span className={`bar ${menuOpen ? 'active' : ''}`}></span>
         </div>
       </div>
+      
+      {menuOpen && (
+        <div className="menu-overlay" onClick={() => setMenuOpen(false)}></div>
+      )}
     </nav>
   );
 };

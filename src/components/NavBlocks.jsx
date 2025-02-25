@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { motion } from 'framer-motion';
 
 const NavBlocks = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -44,17 +45,27 @@ const NavBlocks = () => {
   };
 
   return (
-    <div className="nav-blocks">
-      {sections.map(({ id, label }) => (
-        <div
+    <motion.div 
+      className="nav-blocks"
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 1.5 }}
+    >
+      {sections.map(({ id, label }, index) => (
+        <motion.div
           key={id}
           className={`nav-block ${activeSection === id ? 'active' : ''}`}
           onClick={() => handleBlockClick(id)}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 1.5 + index * 0.1 }}
         >
           <span className="nav-block-tooltip">{label}</span>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
