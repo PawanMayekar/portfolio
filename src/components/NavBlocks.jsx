@@ -10,28 +10,34 @@ const NavBlocks = () => {
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' }
   ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      
-      sections.forEach(({ id }) => {
-        const element = document.getElementById(id);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (
-            scrollPosition >= offsetTop - 200 &&
-            scrollPosition < offsetTop + offsetHeight - 200
-          ) {
-            setActiveSection(id);
+  
+  const NavBlocks = () => {
+    const [activeSection, setActiveSection] = useState('home');
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        
+        sections.forEach(({ id }) => {
+          const element = document.getElementById(id);
+          if (element) {
+            const { offsetTop, offsetHeight } = element;
+            if (
+              scrollPosition >= offsetTop - 200 &&
+              scrollPosition < offsetTop + offsetHeight - 200
+            ) {
+              setActiveSection(id);
+            }
           }
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+        });
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+  
+    // ... rest of the component
+  };
 
   const handleBlockClick = (id) => {
     const element = document.getElementById(id);
