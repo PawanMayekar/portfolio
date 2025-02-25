@@ -11,33 +11,27 @@ const NavBlocks = () => {
     { id: 'contact', label: 'Contact' }
   ];
   
-  const NavBlocks = () => {
-    const [activeSection, setActiveSection] = useState('home');
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        
-        sections.forEach(({ id }) => {
-          const element = document.getElementById(id);
-          if (element) {
-            const { offsetTop, offsetHeight } = element;
-            if (
-              scrollPosition >= offsetTop - 200 &&
-              scrollPosition < offsetTop + offsetHeight - 200
-            ) {
-              setActiveSection(id);
-            }
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      
+      sections.forEach(({ id }) => {
+        const element = document.getElementById(id);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (
+            scrollPosition >= offsetTop - 200 &&
+            scrollPosition < offsetTop + offsetHeight - 200
+          ) {
+            setActiveSection(id);
           }
-        });
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-  
-    // ... rest of the component
-  };
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [activeSection, setActiveSection]);
 
   const handleBlockClick = (id) => {
     const element = document.getElementById(id);
