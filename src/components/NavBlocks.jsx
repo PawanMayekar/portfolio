@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 const NavBlocks = () => {
   const [activeSection, setActiveSection] = useState('home');
 
-  const sections = [
+  const sections = useMemo(() => [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' }
-  ];
+  ], []);
   
   useEffect(() => {
     const handleScroll = () => {
