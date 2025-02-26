@@ -10,11 +10,11 @@ const Hero = () => {
       <div className="container hero-container">
         <div className="hero-content">
           <div className="hero-text">
-            <div className="greeting-box">
+            {/* <div className="greeting-box">
               <span className="greeting-tag">
                 <i className="fas fa-code"></i> Welcome to my portfolio
               </span>
-            </div>
+            </div> */}
             
             <h1>Hi, I'm <span className="highlight">Pawan Mayekar</span></h1>
             <h2>Software Developer</h2>
