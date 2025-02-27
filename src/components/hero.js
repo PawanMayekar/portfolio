@@ -25,10 +25,10 @@ const Hero = () => {
             </p>
             
             <div className="tech-stack">
-              <span className="tech-tag">JavaScript</span>
+              <span className="tech-tag">Python</span>
               <span className="tech-tag">React</span>
               <span className="tech-tag">Node.js</span>
-              <span className="tech-tag">Python</span>
+              <span className="tech-tag">JavaScript</span>
             </div>
             
             <div className="hero-buttons">
