@@ -5,8 +5,7 @@ const Skills = () => {
   const skills = {
     'Technical Skills': ['Machine Learning', 'Data Science', 'TensorFlow', 'PyTorch', 'Computer Vision'],
     'Web Development': ['Python', 'React.js', 'JavaScript', 'CSS', 'HTML', 'Django', 'Node.js', 'Flask'],
-    'Database': ['MongoDB', 'MySQL', 'PostgreSQL', 'Firebase'],
-    'DevOps': ['Docker', 'AWS', 'CI/CD', 'Kubernetes'],
+    'Database': ['MongoDB', 'MySQL', 'PostgreSQL'],
     'Version Control': ['Git', 'Github'],
     'Soft Skills': ['Leadership', 'Communication', 'Adaptability', 'Problem-Solving']
   };
