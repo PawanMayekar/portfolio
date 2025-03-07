@@ -729,8 +729,9 @@ p, span, a {
   .skills-grid,
   .projects-grid,
   .contact-grid {
-    padding: 0.75rem;
+    padding: 0.75;
     gap: 1rem;
+    width: 90%;
   }
 
   .nav-blocks {
