@@ -10,6 +10,7 @@
   transition: all 0.3s ease;
   z-index: 1000;
   border-bottom: 1px solid rgba(51, 65, 85, 0.1);
+  width: 100%;
 }
 
 .navbar.scrolled {
@@ -98,6 +99,7 @@
   display: none;
   cursor: pointer;
   padding: 0.5rem;
+  margin-right: 20px; 
   z-index: 1001;
 }
 
@@ -185,6 +187,17 @@
     display: block;
   }
 
+  .navbar {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+
+  .navbar-container {
+    padding: 0 1rem;
+    margin: 0;
+    width: 100%;
+  }
+
   .nav-menu {
     position: fixed;
     top: 0;
@@ -225,7 +238,8 @@
 
 @media (max-width: 480px) {
   .navbar-container {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
+    margin: 0;
   }
   
   .logo-text {
