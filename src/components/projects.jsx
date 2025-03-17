@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "Enhancing Patient Care with Bilingual Speech and ML",
       description: "A healthcare solution that leverages machine learning and speech recognition to improve patient care through bilingual communication support.",
-      technologies: ["Python", "Machine Learning", "Speech Recognition", "Natural Language Processing"],
+      technologies: ["Python", "Machine Learning", "Speech Recognition", "Natural Language Processing", "FrontEnd = ReactJS"],
       github: "https://github.com/Pawanmatkar297/Health-Care-Chat-Bot"
     },
     {
