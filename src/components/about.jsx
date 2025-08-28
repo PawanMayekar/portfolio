@@ -13,14 +13,14 @@ const About = () => {
                 specializing in building robust and innovative applications.
               </p>
               <p>
-                Currently working as a Software Developer Intern at <span className="company">SD Corporation Pvt Ltd</span>, 
-                I'm focused on Django development and building efficient backend systems. 
+                Currently working as an <span className="highlight">Executive Software Developer</span> at <span className="company">SD Corporation Holdings Pvt Ltd</span>, 
+                I'm focused on full-stack development using Django and React Native. 
                 With a strong foundation in Advanced Python Programming and Web Development,
                 I bring a unique blend of technical expertise and creative problem-solving to every project.
               </p>
               <p>
-                I have a deep interest in Machine Learning and AI, having worked on various projects 
-                from healthcare solutions to computer vision applications. I'm committed to writing 
+                I have experience in developing web and mobile applications, including store management systems, 
+                ticketing systems, and appointment scheduling platforms. I'm committed to writing 
                 clean, efficient code and constantly learning new technologies to stay at the 
                 forefront of software development.
               </p>
@@ -38,6 +38,8 @@ const About = () => {
                   <a href="mailto:pawanmws11@gmail.com">pawanmws11@gmail.com</a>
                 </p>
               </div>
+              
+
             </div>
           </div>
         </div>

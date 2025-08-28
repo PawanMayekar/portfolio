@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/Pawanmatkar297', icon: 'fab fa-github' },
+    { name: 'GitHub', url: 'https://github.com/PawanMayekar', icon: 'fab fa-github' },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/pawan-mayekar-1ba081242/', icon: 'fab fa-linkedin' },
     { name: 'Twitter', url: 'https://x.com/pawanmatkar_', icon: 'fab fa-twitter' }
   ];

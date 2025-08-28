@@ -3,9 +3,10 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
   const skills = {
-    'Technical Skills': ['Machine Learning', 'Data Science', 'TensorFlow', 'PyTorch', 'Computer Vision'],
-    'Web Development': ['Python', 'React.js', 'JavaScript', 'CSS', 'HTML', 'Django', 'Node.js', 'Flask'],
-    'Database': ['MongoDB', 'MySQL', 'PostgreSQL'],
+    'Web Development': ['React.js', 'TypeScript', 'JavaScript', 'CSS', 'HTML'],
+    'Backend Development': ['Python', 'Flask', 'Django'],
+    'Mobile App Development': ['React Native'],
+    'Database': ['PhpMyAdmin', 'MySQL'],
     'Version Control': ['Git', 'Github'],
     'Soft Skills': ['Leadership', 'Communication', 'Adaptability', 'Problem-Solving']
   };

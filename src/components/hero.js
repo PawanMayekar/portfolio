@@ -45,17 +45,17 @@ const Hero = () => {
             </motion.h1>
             
             <motion.h2 className="typewriter" variants={fadeIn}>
-              Software Developer
+              Executive Software Developer
             </motion.h2>
             
             <motion.p className="hero-description" variants={fadeIn}>
               Experienced software developer specializing in full-stack development,
-              machine learning, and creating innovative solutions. Building exceptional
+              mobile app development, and creating innovative solutions. Building exceptional
               digital experiences with clean, efficient code.
             </motion.p>
             
             <motion.div className="tech-stack" variants={stagger}>
-              {['Python', 'React', 'Machine Learning', 'Node.js', 'Flask'].map((tech, index) => (
+              {['React', 'Django', 'React Native', 'Python', 'TypeScript'].map((tech, index) => (
                 <motion.span
                   key={tech}
                   className="tech-pill"

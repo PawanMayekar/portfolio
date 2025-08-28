@@ -4,47 +4,47 @@ import { motion } from 'framer-motion';
 const Projects = () => {
   const projects = [
     {
-      title: "Healthcare ML Communication Platform",
-      description: "An innovative healthcare solution leveraging machine learning and natural language processing to facilitate bilingual communication between healthcare providers and patients.",
-      technologies: ["Python", "TensorFlow", "NLP", "React", "Flask"],
-      github: "https://github.com/Pawanmatkar297/Health-Care-Chat-Bot",
+      title: "Assets Management System",
+      description: "Built a full-stack asset management web app to track assets across multiple locations with real-time dashboard, role-based access, and automated workflows.",
+      technologies: ["React", "Django", "Python", "MySQL", "QR Code"],
+      github: "#",
       highlights: [
-        "Implemented speech recognition with 95% accuracy",
-        "Reduced communication barriers by 60%",
-        "Integrated real-time translation services"
+        "Real-time dashboard for asset status and tracking",
+        "Role-based access and digital approval workflows",
+        "Automated challan generation with QR code integration"
       ]
     },
     {
-      title: "Real-time Hand Sign Detection",
-      description: "Advanced computer vision system for real-time hand sign interpretation, enabling seamless communication for the hearing impaired.",
-      technologies: ["Python", "OpenCV", "TensorFlow", "PyTorch", "Deep Learning"],
-      github: "https://github.com/Pawanmatkar297/Hand-Sign-Detection-Using-Python",
+      title: "Landing Page - Nimble Technologies",
+      description: "Developed a responsive corporate website using React.js, focusing on performance and user experience with interactive UI components.",
+      technologies: ["React 19.1", "React Router", "Framer Motion", "CSS"],
+      github: "https://nimble-wheat.vercel.app/",
       highlights: [
-        "Real-time processing at 30 FPS",
-        "Support for 50+ hand signs",
-        "Custom CNN architecture"
+        "Responsive design with mobile-first approach",
+        "Interactive UI components with Framer Motion",
+        "Component-based architecture for maintainability"
       ]
     },
     {
-      title: "Oil & Gas Forecast Monitor",
-      description: "Predictive analytics platform for oil and gas industry forecasting, utilizing advanced machine learning algorithms for accurate predictions.",
-      technologies: ["Python", "Scikit-learn", "Time Series", "React", "FastAPI"],
-      github: "https://github.com/Pawanmatkar297/Oil-Gas-Forecast-Monitor-FE",
+      title: "Asset Management Mobile App",
+      description: "Developed a mobile asset management app enabling on-site creation, QR code scanning, and streamlined workflows for asset management.",
+      technologies: ["React Native", "Django", "Python", "QR Scanner"],
+      github: "#",
       highlights: [
-        "85% forecast accuracy",
-        "Real-time data processing",
-        "Interactive dashboards"
+        "On-site asset creation and challan approvals",
+        "QR code scanning for real-time verification",
+        "Mobile workflows syncing with web dashboard"
       ]
     },
     {
-      title: "AI-Powered Movie Recommender",
-      description: "Sophisticated movie recommendation system using collaborative filtering and content-based algorithms to provide personalized suggestions.",
-      technologies: ["Python", "Machine Learning", "Pandas", "NumPy", "Streamlit"],
-      github: "https://github.com/Pawanmatkar297/Movie-Recommendation-System",
+      title: "Bilingual Healthcare Chatbot",
+      description: "Engineered a full-stack bilingual healthcare chatbot using ML for disease prediction and NLP for understanding user input with voice interaction.",
+      technologies: ["Python", "Flask", "React.js", "MongoDB", "scikit-learn", "NLTK"],
+      github: "#",
       highlights: [
-        "Hybrid recommendation algorithm",
-        "Processing of 1M+ movie ratings",
-        "Real-time preference learning"
+        "ML model for disease prediction based on symptoms",
+        "NLP integration for understanding user input",
+        "Voice interaction and bilingual support"
       ]
     }
   ];
