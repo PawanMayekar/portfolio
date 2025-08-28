@@ -1,40 +1,22 @@
-import React, { useEffect } from 'react';
-import Navbar from './components/navbar.js';
-import Hero from './components/hero.js';
-import About from './components/about.jsx';
-import Skills from './components/skills.jsx';
-import Projects from './components/projects.jsx';
-import Contact from './components/contact.jsx';
-import NavBlocks from './components/NavBlocks.jsx';
-import Footer from './components/footer.jsx';
+import React from 'react';
+import Hero from './components/hero';
+import Projects from './components/projects';
+import About from './components/about';
+import Skills from './components/skills';
+import Contact from './components/contact';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
+import { ThemeProvider, useTheme } from './context/ThemeContext';
 import './App.css';
-import './styles/animations.css';
+import './styles/projects.css';
+import './styles/sections.css';
 
-function App() {
-  useEffect(() => {
-    // Add intersection observer for section animations
-    const sections = document.querySelectorAll('section');
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => {
-      section.classList.add('section');
-      observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+const AppContent = () => {
+  const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="App">
-      <Navbar />
-      <NavBlocks />
+    <div className="app" data-theme={theme}>
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
         <About />
@@ -44,6 +26,14 @@ function App() {
       </main>
       <Footer />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }
 
