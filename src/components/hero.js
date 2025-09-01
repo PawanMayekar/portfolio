@@ -45,7 +45,7 @@ const Hero = () => {
             </motion.h1>
             
             <motion.h2 className="typewriter" variants={fadeIn}>
-              Executive Software Developer
+             Software Developer
             </motion.h2>
             
             <motion.p className="hero-description" variants={fadeIn}>
